@@ -1,93 +1,265 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Fidel's Personal Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onyeka Fidelis — Health Informatics &amp; Data Systems</title>
+<meta name="description" content="Onyeka Fidelis (Fidel) — Health Informatics Coordinator, M&E professional, and data consultant based in Jos, Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="background-color: powderblue;">
-  <table cellspacing="30">
-    <tr>
-      <td><img src="Fidel 2.png" alt="Onyeka Profile Picture"></td>
-      <td>
-        <h1>Onyeka Fidelis</h1>
-        <p><em>Data Management Clerk and <strong><a href="https://en.wikipedia.org/wiki/Web_developer">Web Developer</a></strong>.</em></p>
-        <p>I am a Data Management Clerk with APIN Public Health Initiatives, working in Faith Alive Foundation focusing on entries of patients information
-          into the EMR (Electronic Medical Record), generate data reports on a daily and weekly basis as well as work alongside my team in achieving the
-          goal of 95-95-95 in Plateau state. I am a qualified Teacher and also a beginner web developer.</p>
-      </td>
-    </tr>
-  </table>
+<div class="grain" aria-hidden="true"></div>
 
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>University of Jos - B.Ed Integrated Science Education</li>
-    <li>Plateau High School - Senior Secondary School Examination (SSCE)</li>
-    <li>Federal Government College, Jos - Junior Secondary School Examination (JSCE)</li>
-    <li>Salama Private School - First School Leaving Certificate</li>
-  </ul>
-  <hr>
+<header class="topbar">
+  <a class="topbar__mark" href="#top">OF</a>
+  <nav class="topbar__nav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+    <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+    <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+  <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-  <h3>Hobbies</h3>
-  <ol>
-    <li><a href="https://www.computerscience.org/resources/what-is-coding-used-for/">Coding</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Learning">Learning</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Video_game">Playing Video Games</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Music">Listening to Music</a></li>
-  </ol>
-  <hr>
+<main id="top">
 
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2019-2020</td>
-        <td>Volunteer at Faith Alive Foundation</td>
-      </tr>
-      <tr>
-        <td>2020</td>
-        <td>Data Management Clerk at APIN Public Health Initiatives</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
+  <!-- HERO — styled as a digitized record card -->
+  <section class="hero" id="hero">
+    <div class="hero__card">
 
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Computer Application</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Database Management</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Web Development</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Graphics</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
+      <div class="hero__photowrap">
+        <span class="corner corner--tl" aria-hidden="true"></span>
+        <span class="corner corner--tr" aria-hidden="true"></span>
+        <span class="corner corner--bl" aria-hidden="true"></span>
+        <span class="corner corner--br" aria-hidden="true"></span>
+        <img src="assets/profile.png" alt="Portrait of Onyeka Fidelis" class="hero__photo">
+        <span class="scanline" aria-hidden="true"></span>
+      </div>
 
-  <h3><a href="Contact me.html">Contact me</a></h3>
+      <div class="hero__text">
+        <p class="field-label">RECORD // OPEN</p>
+        <h1 class="hero__name">Onyeka&nbsp;Fidelis<span class="hero__nickname"> — "Fidel"</span></h1>
+        <p class="hero__role">
+          <span class="hl">Health Informatics</span> Coordinator &amp; M&amp;E Professional
+        </p>
+        <p class="hero__bio">
+          I turn messy, paper-bound health data into clean, usable records — coordinating
+          health information systems at <strong>APIN Public Health Initiatives</strong>,
+          volunteering in monitoring &amp; evaluation with <strong>Faith Alive Foundation</strong>,
+          and running an independent data consultancy that digitizes decades of handwritten
+          clinical archives. Currently completing an <strong>MPH</strong> at the University of Jos.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="#projects">See the work</a>
+        </div>
+        <ul class="hero__meta">
+          <li><span class="field-label">LOCATION</span> Jos, Plateau State, Nigeria</li>
+          <li><span class="field-label">LANGUAGES</span> English · Hausa</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="field-label">FIELD: ABOUT</p>
+    <h2 class="section__title">From the classroom to the data pipeline</h2>
+    <div class="about__grid">
+      <p class="about__lead">
+        I trained as a science teacher before moving into health data — and that background
+        still shapes how I work: clearly, methodically, and with an instinct for making
+        complicated information easier for other people to use.
+      </p>
+      <p>
+        Today my work sits at the intersection of health informatics, monitoring &amp;
+        evaluation, and research. Day to day, that means maintaining health information
+        systems, producing the reports that track progress toward Plateau State's 95-95-95
+        HIV targets, and building the small tools and processes that make routine data work
+        faster and more reliable. Outside my primary role, I run <strong>Archive2Analysis</strong>,
+        a consultancy that helps facilities recover and structure years of handwritten
+        clinical records — and I build software, like an OCR tool for digitizing scanned
+        forms, to make that recovery work scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="field-label">FIELD: EXPERIENCE</p>
+    <h2 class="section__title">Work experience</h2>
+
+    <ol class="ledger">
+      <li class="ledger__row">
+        <span class="ledger__date">2020 — Present</span>
+        <div class="ledger__body">
+          <h3>Health Informatics Coordinator &amp; Data Entry Analyst</h3>
+          <p class="ledger__org">APIN Public Health Initiatives</p>
+          <p>
+            Coordinate health information systems and data entry for patient records within
+            the EMR, generate daily and weekly data reports, and support the team's work
+            toward Plateau State's 95-95-95 HIV targets.
+          </p>
+        </div>
+      </li>
+      <li class="ledger__row">
+        <span class="ledger__date">2019 — Present</span>
+        <div class="ledger__body">
+          <h3>Monitoring &amp; Evaluation Officer (Volunteer)</h3>
+          <p class="ledger__org">Faith Alive Foundation</p>
+          <p>
+            Support M&amp;E activities alongside routine EMR data entry — tracking program
+            data and helping ensure it's accurate, complete, and reportable.
+          </p>
+        </div>
+      </li>
+      <li class="ledger__row">
+        <span class="ledger__date">Ongoing</span>
+        <div class="ledger__body">
+          <h3>Founder &amp; Data Consultant</h3>
+          <p class="ledger__org">Archive2Analysis</p>
+          <p>
+            Independent consultancy digitizing historical handwritten clinical records —
+            neonatal registers, disease surveillance logs, treatment cards — turning paper
+            archives into structured, analyzable data.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="field-label">FIELD: PROJECTS</p>
+    <h2 class="section__title">Selected projects</h2>
+
+    <div class="projects">
+      <article class="project-card">
+        <p class="field-label">PROJECT // 01</p>
+        <h3>DataLens OCR</h3>
+        <p>
+          A web-based OCR application that reads scanned and handwritten forms using the
+          Claude API's vision capabilities, then exports clean, structured data to Excel,
+          CSV, or SPSS — built to make digitizing paper health records faster and less
+          error-prone.
+        </p>
+        <ul class="tag-list">
+          <li>Claude API (Vision)</li>
+          <li>OCR</li>
+          <li>Data Export</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <p class="field-label">PROJECT // 02</p>
+        <h3>Archive2Analysis</h3>
+        <p>
+          A data infrastructure consultancy for health facilities holding years of
+          handwritten records — neonatal registers, disease surveillance logs, treatment
+          cards — converting them into structured, analysis-ready datasets.
+        </p>
+        <ul class="tag-list">
+          <li>Data Digitization</li>
+          <li>Health Records</li>
+          <li>Consultancy</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="field-label">FIELD: SKILLS</p>
+    <h2 class="section__title">Skills &amp; tools</h2>
+
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Health Informatics &amp; M&amp;E</h3>
+        <ul class="tag-list tag-list--wrap">
+          <li>EMR / EHR Systems</li>
+          <li>Data Reporting</li>
+          <li>Monitoring &amp; Evaluation</li>
+          <li>Health Data Digitization</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Data &amp; Analysis</h3>
+        <ul class="tag-list tag-list--wrap">
+          <li>Database Management</li>
+          <li>Data Cleaning</li>
+          <li>SPSS / Excel</li>
+          <li>Research Methods</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Development</h3>
+        <ul class="tag-list tag-list--wrap">
+          <li>Web Development</li>
+          <li>OCR &amp; Automation</li>
+          <li>Claude API</li>
+          <li>Graphics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <p class="field-label">FIELD: EDUCATION</p>
+    <h2 class="section__title">Education</h2>
+
+    <ol class="ledger">
+      <li class="ledger__row">
+        <span class="ledger__date">In progress</span>
+        <div class="ledger__body">
+          <h3>Master of Public Health (MPH)</h3>
+          <p class="ledger__org">University of Jos</p>
+        </div>
+      </li>
+      <li class="ledger__row">
+        <span class="ledger__date">Completed</span>
+        <div class="ledger__body">
+          <h3>B.Sc. Integrated Science Education</h3>
+          <p class="ledger__org">University of Jos</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <p class="field-label">FIELD: CONTACT</p>
+    <h2 class="section__title">Let's talk</h2>
+    <p class="contact__lead">
+      Open to conversations about health informatics, M&amp;E, data digitization work, or
+      collaboration on Archive2Analysis.
+    </p>
+    <div class="contact__actions">
+      <a class="btn btn--primary" href="mailto:youremail@example.com">Email me</a>
+      <a class="btn btn--ghost" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn--ghost" href="https://github.com/fidelevra" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Onyeka Fidelis. Built with plain HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
